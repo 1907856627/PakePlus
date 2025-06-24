@@ -519,17 +519,17 @@ const testToken = async (tips: boolean = true) => {
                 }
                 localStorage.setItem('token', store.token)
                 store.setUser(userInfo.data)
-                try {
-                    if (userInfo.data.login !== 'Sjj1024') {
-                        await forkStartShas(tips)
-                    } else {
-                        await commitShas(tips)
-                    }
-                } catch (error) {
-                    oneMessage.error(t('tokenError'))
-                    localStorage.clear()
-                    store.setUser({ login: '' })
-                }
+                // try {
+                //     if (userInfo.data.login !== 'Sjj1024') {
+                //         await forkStartShas(tips)
+                //     } else {
+                //         await commitShas(tips)
+                //     }
+                // } catch (error) {
+                //     oneMessage.error(t('tokenError'))
+                //     localStorage.clear()
+                //     store.setUser({ login: '' })
+                // }
             } else {
                 localStorage.clear()
                 store.setUser({ login: '' })
