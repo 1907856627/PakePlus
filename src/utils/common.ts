@@ -1185,14 +1185,7 @@ export const createIssue = async (
 
 // check last publish date
 export const checkLastPublish = () => {
-    if (true) return false
-    if (import.meta.env.DEV) return false
-    const savedTime = localStorage.getItem('lastClickTime')
-    if (!savedTime) return false
-    const now = new Date()
-    const oneHourAfterClick = new Date(savedTime)
-    oneHourAfterClick.setHours(oneHourAfterClick.getHours() + 1)
-    return now < oneHourAfterClick
+    return false
 }
 
 // check update
