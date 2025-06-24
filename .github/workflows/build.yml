@@ -167,7 +167,6 @@ jobs:
               with:
                   tagName: 'PakePlus-v__VERSION__'
                   releaseName: 'PakePlus v__VERSION__'
-                  body_path: ./Note.md
                   releaseDraft: true
                   prerelease: false
                   args: ${{ matrix.args }}
